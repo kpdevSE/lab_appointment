@@ -2,11 +2,11 @@ import React from "react";
 import Navigation from "./Components/Navigation/Navigation";
 
 // Images
-import screenWallpaper from "./assets/screens.png";
 import screenWallpapertwo from "./assets/Frame 19.png";
-import pointLogo from "./assets/Vector.png";
 import pointLogoTwo from "./assets/Vector (1).png";
 import pointLogoThree from "./assets/Vector (2).png";
+import pointLogo from "./assets/Vector.png";
+import screenWallpaper from "./assets/screens.png";
 
 export default function App() {
   return (
@@ -85,6 +85,10 @@ export default function App() {
               <p className="pt-3">
                 When you add work to your Slate calendar we automatically
                 calculate useful insights
+              </p>
+              <p>
+                Kanishka Pasindu Mudithananda is a great man and he is very
+                clever
               </p>
             </div>
           </div>
