@@ -89,7 +89,7 @@ const DrawerNavigation = () =>
                                 <ul className="pl-9">
                                     <li>
                                         <Link
-                                            to="/dashboard/lead/add-new-lead"
+                                            to="/Doctors"
                                             className="block px-6 py-3 text-black hover:bg-gray-800 hover:text-white">
                                             Creat a Appointment
                                         </Link>
@@ -134,7 +134,7 @@ const DrawerNavigation = () =>
                                     </li>
                                     <li>
                                         <Link
-                                            to="/dashboard/drivers/driver-payment"
+                                            to="/Doctors"
                                             className="block px-6 py-3 text-black hover:bg-gray-800 hover:text-white">
                                             View Doctors
                                         </Link>
