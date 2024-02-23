@@ -1,6 +1,7 @@
 
 import {Pagination} from 'antd';
 import DrawerNavigation from "../../Components/Drawer/page";
+import EditDoctors from '../../Components/EditDoctor/edit';
 import ModalComponents from "../../Components/modal/modal";
 import doctor from '../../assets/doctor.png';
 
@@ -126,6 +127,7 @@ export default function Doctors()
                                                         </svg>
                                                         More
                                                     </div>
+                                                    <EditDoctors />
                                                 </td>
                                             </tr>
                                         )
