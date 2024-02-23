@@ -89,7 +89,7 @@ const DrawerNavigation = () =>
                                 <ul className="pl-9">
                                     <li>
                                         <Link
-                                            to="/Doctors"
+                                            to="/CreatAppointments"
                                             className="block px-6 py-3 text-black hover:bg-gray-800 hover:text-white">
                                             Creat a Appointment
                                         </Link>
@@ -182,12 +182,12 @@ const DrawerNavigation = () =>
                         {/* Menu 4*/}
                         <li>
                             <Link
-                                to="/dashboard/reports"
+                                to="/Departments"
                                 className="flex items-center px-6 py-3 text-black hover:bg-gray-800 hover:text-white">
                                 <span className="text-lg mr-3">
                                     <i className="fas fa-tachometer-alt"></i>
                                 </span>
-                                Reports
+                                Departments
                             </Link>
                         </li>
                         {/* Menu 5*/}

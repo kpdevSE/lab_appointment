@@ -5,7 +5,8 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 // Images
 import Appointments from "./pages/Appointments/page";
 import CreateAppointment from "./pages/CreatAppointments/page";
-import Doctors from "./pages/Doctors/page";
+import Departments from "./pages/Departments/page";
+import DoctorsDynamic from "./pages/DoctorsDynamic/page";
 import Home from "./pages/Home/page";
 import Login from "./pages/Login/page";
 
@@ -17,8 +18,9 @@ export default function App() {
            <Route path="/" element={<Login/>}/>
            <Route  path="/Home" element={<Home/>}/>
            <Route  path="/Appointments" element={<Appointments/>}/>
-           <Route  path="/CreateAppointments" element={<CreateAppointment/>}/>
-           <Route  path="/Doctors" element={<Doctors/>}/>
+           <Route  path="/CreatAppointments" element={<CreateAppointment/>}/>
+           <Route  path="/DoctorsDynamic" element={<DoctorsDynamic/>}/>
+           <Route  path="/Departments" element={<Departments/>}/>
         </Routes>
       </BrowserRouter>
       

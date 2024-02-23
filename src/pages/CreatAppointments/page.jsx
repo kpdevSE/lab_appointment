@@ -91,7 +91,7 @@ export default function CreateAppointment()
                                                     {e.designation}
                                                 </td>
                                                 <td class="px-6 py-4 flex items-center justify-center">
-                                                    <Link to={'/doctors'}>
+                                                    <Link to={'/DoctorsDynamic'}>
                                                         <div className="bg-sky-700 text-white w-16 rounded-lg flex items-center justify-center">
                                                             {e.booking}
                                                         </div>
