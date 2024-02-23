@@ -12,6 +12,7 @@ import DoctorsDynamic from "./pages/DoctorsDynamic/page";
 import Home from "./pages/Home/page";
 import Login from "./pages/Login/page";
 import Patients from "./pages/Patients/page";
+import Reports from "./pages/Reports/page";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
            <Route  path="/Doctors" element={<Doctors/>}/>
            <Route  path="/Patients" element={<Patients/>}/>
            <Route  path="/Dashboard" element={<Dashboard/>}/>
+           <Route  path="/Reports" element={<Reports/>}/>
         </Routes>
       </BrowserRouter>
       

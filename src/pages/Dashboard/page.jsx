@@ -60,7 +60,38 @@ export default function Dashboard()
             date: "11/01/09",
             type: "Wet Mount",
             result: "Normal"
-        }
+        },
+        {
+            id: 6,
+            date: "11/01/09",
+            type: "Wet Mount",
+            result: "Normal"
+        },
+        {
+            id: 7,
+            date: "11/01/09",
+            type: "Wet Mount",
+            result: "Normal"
+        },
+        {
+            id: 8,
+            date: "11/01/09",
+            type: "Wet Mount",
+            result: "Normal"
+        },
+        {
+            id: 9,
+            date: "11/01/09",
+            type: "Wet Mount",
+            result: "Normal"
+        },
+        {
+            id: 10,
+            date: "11/01/09",
+            type: "Wet Mount",
+            result: "Normal"
+        },
+
     ];
 
 

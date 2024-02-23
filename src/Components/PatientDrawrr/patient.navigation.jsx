@@ -98,7 +98,7 @@ const PatientDrawer = () =>
                                 <ul className="pl-9">
                                     <li>
                                         <Link
-                                            to="/Doctors"
+                                            to="/Reports"
                                             className="block px-6 py-3 text-black hover:bg-gray-800 hover:text-white">
                                             Lab Reports
                                         </Link>
