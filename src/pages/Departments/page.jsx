@@ -42,8 +42,8 @@ export default function Departments()
             </div>
             <div className="px-2 mt-5 shadow-lg rounded-xl h-full">
                 <div className="flex items-start justify-start flex-col gap-1">
-                    <h1 className="text-2xl font-semibold text-slate-400">Create Appointments</h1>
-                    <p className="text-lg font-semibold text-slate-600">Create a Appointment to Select a Doctor </p>
+                    <h1 className="text-2xl font-semibold text-slate-400">Department Section</h1>
+                    <p className="text-lg font-semibold text-slate-600">Choose a department to get any services</p>
                 </div>
                 <div className="flex items-center justify-between mt-10 gap-5" >
                     <p >Search Appointments......</p>

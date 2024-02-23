@@ -127,7 +127,7 @@ const DrawerNavigation = () =>
                                 <ul className="pl-9">
                                     <li>
                                         <Link
-                                            to="/dashboard/drivers/driver-list"
+                                            to="/AddDoctors"
                                             className="block px-6 py-3 text-black hover:bg-gray-800 hover:text-white">
                                             Add Doctors
                                         </Link>
