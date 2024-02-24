@@ -11,6 +11,7 @@ import Doctors from "./pages/Doctors/page";
 import DoctorsDynamic from "./pages/DoctorsDynamic/page";
 import Home from "./pages/Home/page";
 import Login from "./pages/Login/page";
+import MyAppointments from "./pages/MyAppointments/page";
 import Patients from "./pages/Patients/page";
 import Reports from "./pages/Reports/page";
 
@@ -30,6 +31,7 @@ export default function App() {
            <Route  path="/Patients" element={<Patients/>}/>
            <Route  path="/Dashboard" element={<Dashboard/>}/>
            <Route  path="/Reports" element={<Reports/>}/>
+           <Route  path="/MyAppointments" element={<MyAppointments/>}/>
         </Routes>
       </BrowserRouter>
       
