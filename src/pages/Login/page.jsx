@@ -1,9 +1,39 @@
-import {Link} from 'react-router-dom'
-import AdminLogin from '../../Components/AdminLogin/AdminLogin'
-import Register from '../../Components/register/regsiter'
-import image from '../../assets/labimage.png'
+import axios from 'axios';
+import {useState} from 'react';
+import {Link, useNavigate} from 'react-router-dom';
+import {toast} from 'react-toastify';
+import AdminLogin from '../../Components/AdminLogin/AdminLogin';
+import Register from '../../Components/register/regsiter';
+import image from '../../assets/labimage.png';
+
+
 export default function Login()
 {
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const navigate = useNavigate();
+
+    const handleSubmit = (event) =>
+    {
+        event.preventDefault();
+
+        axios.post('http://localhost:3000/login', {email, password})
+            .then(result =>
+            {
+                console.log(result);
+                if (result.data === "Success")
+                {
+                    console.log("Login Success");
+                    toast.success('Login successful!')
+                    navigate('/Dashboard');
+                }
+                else
+                {
+                    toast.error('Incorrect password! Please try again.');
+                }
+            })
+            .catch(err => console.log(err));
+    }
     return (
         <div className='h-[77vh] w-full'>
             <div className='w-[85%] mx-auto mt-10'>
@@ -14,15 +44,21 @@ export default function Login()
                 <div className="lg:w-[50%] w-full">
                     <div className='flex flex-col'>
                         <p className='text-2xl text-center'>Pateint Login</p>
-                        <form action="">
+                        <form action="" onSubmit={handleSubmit}>
                             <div className='flex flex-col gap-4 items-center justify-center mt-5'>
                                 <div className="flex flex-col lg:w-[70%] w-full">
                                     <label htmlFor="" className='text-lg font-semibold'>Email:-</label>
-                                    <input type="email" className="input input-bordered w-full" required />
+                                    <input type="email" className="input input-bordered w-full" required value={email} onChange={(e) =>
+                                    {
+                                        setEmail(e.target.value)
+                                    }} />
                                 </div>
                                 <div className="flex flex-col lg:w-[70%] w-full">
                                     <label htmlFor="" className='text-lg font-semibold'>Password:-</label>
-                                    <input type="password" className="input input-bordered w-full" required />
+                                    <input type="password" className="input input-bordered w-full" required value={password} onChange={(e) =>
+                                    {
+                                        setPassword(e.target.value)
+                                    }} />
                                 </div>
                                 <button className="btn btn-active lg:w-[70%] w-full btn-primary mt-4" type='submit'>Login</button>
                             </div>
