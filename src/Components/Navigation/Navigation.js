@@ -1,8 +1,7 @@
-import {useState} from "react";
-import {Link} from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function SideBar()
-{
+export default function SideBar() {
   const [showSubMenu1, setShowSubMenu1] = useState(false);
 
   const [showSubMenu3, setShowSubMenu3] = useState(false);
@@ -20,7 +19,7 @@ export default function SideBar()
       case 4:
         setShowSubMenu4(!showSubMenu4);
         break;
-        case 5:
+      case 5:
         setShowSubMenu5(!showSubMenu5);
         break;
       default:
@@ -28,7 +27,7 @@ export default function SideBar()
     }
   };
   return (
-   <div className="bg-gray-900 text-white w-64 min-h-screen">
+    <div className="bg-gray-900 text-white w-64 min-h-screen">
       <div className="py-6 pl-6 pr-4 bg-gray-800">
         <h1 className="text-2xl font-bold">
           L<span className="text-blue-600">A</span>B
@@ -39,7 +38,8 @@ export default function SideBar()
         <li>
           <Link
             to="/Home"
-            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-tachometer-alt"></i>
             </span>
@@ -49,7 +49,8 @@ export default function SideBar()
         <li>
           <button
             onClick={() => toggleSubMenu(1)}
-            className="flex items-center w-full px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none">
+            className="flex items-center w-full px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-users"></i>
             </span>
@@ -67,14 +68,16 @@ export default function SideBar()
               <li>
                 <Link
                   to="/dashboard/lead/add-new-lead"
-                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+                >
                   Creat a Appointment
                 </Link>
               </li>
               <li>
                 <Link
                   to="/dashboard/lead/manage-lead"
-                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+                >
                   View Appointments
                 </Link>
               </li>
@@ -82,12 +85,13 @@ export default function SideBar()
           )}
         </li>
         {/* Add more menu items with submenus below */}
-       
+
         {/* Menu 3 */}
         <li>
           <button
             onClick={() => toggleSubMenu(3)}
-            className="flex items-center w-full px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none">
+            className="flex items-center w-full px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-truck"></i>
             </span>
@@ -105,24 +109,27 @@ export default function SideBar()
               <li>
                 <Link
                   to="/dashboard/drivers/driver-list"
-                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+                >
                   Add Doctors
                 </Link>
               </li>
               <li>
                 <Link
                   to="/dashboard/drivers/driver-payment"
-                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+                >
                   View Doctors
                 </Link>
               </li>
             </ul>
           )}
         </li>
-         <li>
+        <li>
           <button
             onClick={() => toggleSubMenu(5)}
-            className="flex items-center w-full px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none">
+            className="flex items-center w-full px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white focus:outline-none"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-truck"></i>
             </span>
@@ -140,14 +147,16 @@ export default function SideBar()
               <li>
                 <Link
                   to="#"
-                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+                >
                   Add Patients
                 </Link>
               </li>
               <li>
                 <Link
                   to="#"
-                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+                  className="block px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+                >
                   View Patients
                 </Link>
               </li>
@@ -155,12 +164,12 @@ export default function SideBar()
           )}
         </li>
 
-
         {/* Menu 4*/}
         <li>
           <Link
             to="/dashboard/reports"
-            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-tachometer-alt"></i>
             </span>
@@ -171,7 +180,8 @@ export default function SideBar()
         <li>
           <Link
             to="/dashboard/helpcenter"
-            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-tachometer-alt"></i>
             </span>
@@ -179,11 +189,12 @@ export default function SideBar()
           </Link>
         </li>
         {/* Menu 6*/}
-       
-         <li>
+
+        <li>
           <Link
             to="#"
-            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white">
+            className="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white"
+          >
             <span className="text-lg mr-3">
               <i className="fas fa-tachometer-alt"></i>
             </span>
@@ -191,7 +202,6 @@ export default function SideBar()
           </Link>
         </li>
       </ul>
-      
     </div>
   );
 }

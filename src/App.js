@@ -7,11 +7,13 @@ import "react-toastify/dist/ReactToastify.css";
 import AddDepoartment from "./pages/AddDepartment/page";
 import AddDoctors from "./pages/AddDoctors/page";
 import Appointments from "./pages/Appointments/page";
+import BookingPatients from "./pages/Booking/page";
 import CreateAppointment from "./pages/CreatAppointments/page";
 import Dashboard from "./pages/Dashboard/page";
 import Departments from "./pages/Departments/page";
 import Doctors from "./pages/Doctors/page";
 import DoctorsDynamic from "./pages/DoctorsDynamic/page";
+import DoctorsPatients from "./pages/DoctorsPatients/page";
 import EditDoctors from "./pages/EditDoctor/page";
 import EditModal from "./pages/EditModal/page";
 import Home from "./pages/Home/page";
@@ -41,6 +43,8 @@ export default function App() {
           <Route path="/EditDoctor/:id" element={<EditDoctors />} />
           <Route path="/EditModal/:id" element={<EditModal />} />
           <Route path="/AddDepartment" element={<AddDepoartment />} />
+          <Route path="/DoctorsPatients" element={<DoctorsPatients />} />
+          <Route path="/Booking" element={<BookingPatients />} />
         </Routes>
       </BrowserRouter>
     </div>

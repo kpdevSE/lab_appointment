@@ -78,9 +78,6 @@ export default function Login()
                         <Link to={'/Home'} className='bg-red-400 text-white w-[200px] h-full p-1 flex items-center justify-center'>
                             Admin Dashboard
                         </Link>
-                        <Link to={'/Dashboard'} className='bg-red-400 text-white w-[200px] h-full p-1 flex items-center justify-center'>
-                            Patient Dashboard
-                        </Link>
                     </div>
                     {/*  */}
 
