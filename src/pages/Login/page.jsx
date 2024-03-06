@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {useState} from 'react';
-import {Link, useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import {toast} from 'react-toastify';
 import AdminLogin from '../../Components/AdminLogin/AdminLogin';
 import Register from '../../Components/register/regsiter';
@@ -67,19 +67,11 @@ export default function Login()
                             <Register />
                         </div>
                         <hr className='lg:w-[70%] w-full mx-auto mt-5' />
-                        <div className='mx-auto w-full lg:w-[70%]'>
+                        <div className='mx-auto w-full lg:w-[70%] hover:cursor-pointer'>
                             <AdminLogin />
                         </div>
 
                     </div>
-
-                    {/* Remove this when u finsh backend coding .. show the demo of the project of full frontend..*/}
-                    <div className='mt-5 flex items-center justify-center gap-2'>
-                        <Link to={'/Home'} className='bg-red-400 text-white w-[200px] h-full p-1 flex items-center justify-center'>
-                            Admin Dashboard
-                        </Link>
-                    </div>
-                    {/*  */}
 
                 </div>
                 <div className='lg:w-[50%] w-full'>

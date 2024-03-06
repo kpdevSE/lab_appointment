@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 // Components
 import AddDepoartment from "./pages/AddDepartment/page";
 import AddDoctors from "./pages/AddDoctors/page";
+import AdminLogin from "./pages/AdminRegister/page";
 import Appointments from "./pages/Appointments/page";
 import BookingPatients from "./pages/Booking/page";
 import CreateAppointment from "./pages/CreatAppointments/page";
@@ -45,6 +46,7 @@ export default function App() {
           <Route path="/AddDepartment" element={<AddDepoartment />} />
           <Route path="/DoctorsPatients" element={<DoctorsPatients />} />
           <Route path="/Booking" element={<BookingPatients />} />
+          <Route path="/AdminRegister" element={<AdminLogin />} />
         </Routes>
       </BrowserRouter>
     </div>
